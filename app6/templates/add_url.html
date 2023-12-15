@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Add New url</title>
+</head>
+<body>
+    <h1>Add New url</h1>
+
+    <form method="post">
+        {% csrf_token %}
+        <label for="long"> ENTER LONG URL: </label>
+        <input type="text" id="long" name="long"> <br>
+        <input type="submit" value="Add url">
+    </form>

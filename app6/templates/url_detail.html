@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> URL DETAILS </title>
+</head>
+<body>
+
+    <header>
+        <h1>OUR URLS</h1>
+    </header>
+    <li><br>
+        URL: {{ url.long }}<br>
+        SHORTENED URL :<a href="{% url 'r1edirect' url.id %}">{{url.short}}</a><br>
+        VISITS : {{url.count}}<br>
+        <a href="{% url 'delete_url' url.id %}">Delete URL</a><br><br>
+        <a href="{% url 'main_view' %}"> Go to Main Page</a>
+
+    </li>
+
+</body>
+</html>
